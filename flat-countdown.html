@@ -12,26 +12,38 @@
         <link rel="stylesheet" href="flat-countdown.css">
     </head>
     <body>
-        <section class="countdown-main">
-            <table>
-                <tr>
-                    <td class="title">Накоплено</td>
-                    <td class="value">0 $</td>
-                </tr>
-                <tr>
-                    <td class="title">Осталось</td>
-                    <td class="value">60000 $</td>
-                </tr>
-            </table>
-            <div class="progress-container">
-                <div class="progress progress-striped">
-                    <div class="progress-bar">
-                    </div>          
+        <section class="countdown" id="countdown">
+            <h1 class="countdown-header">Сбор $$$ на квартиру в Минске</h1>
+            <div class="countdown-container">
+                <table class="countdown-table">
+                    <tr>
+                        <td class="title">Накоплено</td>
+                        <td class="value">0 $</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Осталось</td>
+                        <td class="value">60000 $</td>
+                    </tr>
+                </table>
+                <div class="progress-container">
+                    <div class="progress progress-striped">
+                        <div class="progress-bar">
+                        </div>          
+                    </div>
+                    <p class="percentage">
+                        0 %
+                    </p>
                 </div>
-                <p class="percentage">
-                    0 %
-                </p>
             </div>
+        </section>
+        <section class="goals" id="goals">
+            <h2>Чек-Лист</h2>
+            <ul class="goals-list">
+                <li>TEST</li>
+                <li>TEST</li>
+                <li>TEST</li>
+                <li>TEST</li>
+            </ul>
         </section>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>

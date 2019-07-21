@@ -1,32 +1,70 @@
-.countdown-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: darkred;
-    background-image: radial-gradient(circle at center center, black, #ccc), repeating-radial-gradient(circle at center center, black, black, 1rem, transparent 2rem, transparent 1rem);
-    background-blend-mode: color-burn;
+/* RESET STYLES START */
+* {
+    vertical-align: baseline;
+    font-style: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
-
-.countdown-main table {
-    padding: 10px 100px;
-    color: white;
+body {
+    padding: 0;
     font-family: 'Roboto Mono', monospace;
     font-size: 20px;
+}
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, ul, ol, dl {
+    margin: 20px 0;
+}
+li, dd, blockquote {
+    margin-left: 40px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}   
+/* RESET STYLES END */
+
+
+/* COUNTDOWN START  */
+.countdown {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     text-transform: capitalize;
-    background-color: rgba(0, 0, 0, 0.3)
+    color: white;
+    background-color: darkred;
+    background-image: radial-gradient(circle at center center, black, #ccc), repeating-radial-gradient(circle at center center, black, black, 1rem, transparent 2rem, transparent 1rem);
+    background-blend-mode: multiply;
 }
 
-.progress-container {
+.countdown-container {
     width: 300px;
 }
 
+.countdown-table {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.countdown-table .title {
+    text-align: left;
+}
+
+.countdown-table .value {
+    text-align: right;
+}
+
+.progress-container {
+    width: 100%;
+}
+
 .progress-container .percentage {
-    padding-left: calc(100%*0/60000);
+    text-align: center
 }
 
 .progress {
+    margin: 20px 0 0 0;
     padding: 6px;
     background:rgb(255,255,255, 0.25);
     border-radius: 6px;
@@ -50,3 +88,10 @@
             rgb(252,163,17) 50%, rgb(252,163,17) 75%,
             transparent 75%, transparent); 
 }
+/* COUNTDOWN END  */
+
+/* GOALS START */
+.goals {
+    height: 100vh;
+}
+/* GOALS END */
