@@ -38,6 +38,10 @@ table {
     background-blend-mode: multiply;
 }
 
+.countdown-header {
+    text-align: center;
+}
+
 .countdown-container {
     width: 300px;
 }
